@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>English to Hindi Translation</title>
+</head>
+<body>
+    <h1>English to Hindi Translation</h1>
+    <form method="POST" action="/translate">
+        <textarea name="english_text" rows="4" cols="50" placeholder="Enter English text"></textarea>
+        <br><br>
+        <input type="submit" value="Translate">
+    </form>
+    {% if hindi_text %}
+        <h2>Hindi Translation:</h2>
+        <p>{{ hindi_text }}</p>
+    {% endif %}
+</body>
+</html>
